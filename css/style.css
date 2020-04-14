@@ -9,6 +9,11 @@ header h1 {
     margin-bottom: 10px;
 }
 
+header h1 a {
+    text-decoration: none;
+    color: black;
+}
+
 .main-menu {
     position: fixed;
 }
