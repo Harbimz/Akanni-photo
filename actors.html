@@ -8,7 +8,7 @@
     <title>Actors - Akanni Photo</title>
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1><a href="index.html">AKANNI PHOTO</a></h1>
         <nav class="main-menu">
             <ul>
@@ -19,22 +19,22 @@
                 <li><a href="events.html">Events</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a target="_blank" href="https://www.instagram.com/">Instagram</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
     <div class="gallery">
         <!-- Trigger the Modal -->
-        <img onclick="myFunction(this);" id="myImg" src="images/actors/Chris Hemsworth.jpg" alt="Chris Hemsworth">
-        <img onclick="myFunction(this);" id="myImg" src="images/actors/Dwayne Johnson.jpg" alt="Dwayne Johnson">
-        <img onclick="myFunction(this);" id="myImg" src="images/actors/Iya Rainbow.jpeg" alt="Iya Rainbow">
-        <img onclick="myFunction(this);" id="myImg" src="images/actors/Jackie Chan.jpg" alt="Jackie Chan">
-        <img onclick="myFunction(this);" id="myImg" src="images/actors/Kevin Hart.jpg" alt="Kevin Hart">
-        <img onclick="myFunction(this);" id="myImg" src="images/actors/Odunlade Adekola.jpg" alt="Odunlade Adekola">
-        <img onclick="myFunction(this);" id="myImg" src="images/actors/Omotola Jalade Ekeinde.jpg" alt="Omotola Jalade Ekeinde">
-        <img onclick="myFunction(this);" id="myImg" src="images/actors/Ramsey Nouah.jpg" alt="Ramsey Nouah">
-        <img onclick="myFunction(this);" id="myImg" src="images/actors/Scarlett Johansson.webp" alt="Scarlett Johansson">
-        <img onclick="myFunction(this);" id="myImg" src="images/actors/Taraji P Henson.jpg" alt="Taraji P Henson">
+        <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/actors/Chris Hemsworth.jpg" alt="Chris Hemsworth"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/actors/Dwayne Johnson.jpg" alt="Dwayne Johnson"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/actors/Iya Rainbow.jpg" alt="Iya Rainbow"></div>
+        <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/actors/Kevin Hart.jpg" alt="Kevin Hart"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/actors/Jackie Chan.jpg" alt="Jackie Chan"></div>
+        <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/actors/Odunlade Adekola.jpg" alt="Odunlade Adekola"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/actors/Omotola Jalade Ekeinde.jpg" alt="Omotola Jalade Ekeinde"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/actors/Ramsey Nouah.jpg" alt="Ramsey Nouah"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/actors/Scarlett Johansson.webp" alt="Scarlett Johansson"></div>
+        <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/actors/Taraji P Henson.jpg" alt="Taraji P Henson"></div>
        
         <!-- The Modal -->
         <div id="myModal" class="modal">
@@ -51,5 +51,9 @@
         <script src="javascript/script.js"></script>
        
         </div>
+        <div class="clear"></div>
+    <footer>
+        <p>All Images © Akanni Photo 2020</p>
+    </footer>
 </body>
 </html>
