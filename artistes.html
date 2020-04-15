@@ -8,7 +8,7 @@
     <title>Artistes - Akanni Photo</title>
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1><a href="index.html">AKANNI PHOTO</a></h1>
         <nav class="main-menu">
             <ul>
@@ -19,23 +19,23 @@
                 <li><a href="events.html">Events</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a target="_blank" href="https://www.instagram.com/">Instagram</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
     <div class="gallery">
  <!-- Trigger the Modal -->
- <img onclick="myFunction(this);" id="myImg" src="images/artistes/Asa.jpg" alt="Asa">
- <img onclick="myFunction(this);" id="myImg" src="images/artistes/beyonce.jpg" alt="Beyonce">
- <img onclick="myFunction(this);" id="myImg" src="images/artistes/Brymo.jpg" alt="Brymo">
- <img onclick="myFunction(this);" id="myImg" src="images/artistes/Davido.jpg" alt="Davido">
- <img onclick="myFunction(this);" id="myImg" src="images/artistes/Diamond platinumz.jpg" alt="Diamond Platinumz">
- <img onclick="myFunction(this);" id="myImg" src="images/artistes/Drake.jpg" alt="Drake">
- <img onclick="myFunction(this);" id="myImg" src="images/artistes/ed sheeran.jpg" alt="Ed Sheeran">
- <img onclick="myFunction(this);" id="myImg" src="images/artistes/eminem.jpg" alt="Eminem">
- <img onclick="myFunction(this);" id="myImg" src="images/artistes/M.I Abaga.jpg" alt="M.I Abaga">
- <img onclick="myFunction(this);" id="myImg" src="images/artistes/Rihanna.jpg" alt="Rihanna">
- <img onclick="myFunction(this);" id="myImg" src="images/artistes/tiwa savage.jpg" alt="Tiwa Savage">
+ <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/artistes/Asa.jpg" alt="Asa"></div>
+ <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/artistes/beyonce.jpg" alt="Beyonce"></div>
+ <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/artistes/Brymo.jpg" alt="Brymo"></div>
+ <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/artistes/Davido.jpg" alt="Davido"></div>
+ <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/artistes/Diamond platinumz.jpg" alt="Diamond Platinumz"></div>
+ <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/artistes/Drake.jpg" alt="Drake"></div>
+ <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/artistes/ed sheeran.jpg" alt="Ed Sheeran"></div>
+ <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/artistes/eminem.jpg" alt="Eminem"></div>
+ <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/artistes/M.I Abaga.jpg" alt="M.I Abaga"></div>
+ <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/artistes/Rihanna.jpg" alt="Rihanna"></div>
+ <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/artistes/tiwa savage.jpg" alt="Tiwa Savage"></div>
 
  <!-- The Modal -->
  <div id="myModal" class="modal">
@@ -52,7 +52,10 @@
  <script src="javascript/script.js"></script>
 
  </div>
-    
+ <div class="clear"></div>
+ <footer>
+     <p>All Images © Akanni Photo 2020</p>
+ </footer>
     
 </body>
 </html>
