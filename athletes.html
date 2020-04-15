@@ -8,7 +8,7 @@
     <title>Athletes - Akanni Photo</title>
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1><a href="index.html">AKANNI PHOTO</a></h1>
         <nav class="main-menu">
             <ul>
@@ -19,23 +19,23 @@
                 <li><a href="events.html">Events</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a target="_blank" href="https://www.instagram.com/">Instagram</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
     <div class="gallery">
         <!-- Trigger the Modal -->
-        <img onclick="myFunction(this);" id="myImg" src="images/athletes/Alex Morgan.jpg" alt="Alex Morgan">
-        <img onclick="myFunction(this);" id="myImg" src="images/athletes/Asisat Oshoala.jpeg" alt="Asisat Oshoala">
-        <img onclick="myFunction(this);" id="myImg" src="images/athletes/Lebron James.jpg" alt="Lebron James">
-        <img onclick="myFunction(this);" id="myImg" src="images/athletes/Lionel Messi.jpg" alt="Lionel Messi">
-        <img onclick="myFunction(this);" id="myImg" src="images/athletes/Lisa Leslie.jpg" alt="Lisa Leslie">
-        <img onclick="myFunction(this);" id="myImg" src="images/athletes/Maria Sharapova.jpg" alt="Maria Sharapova">
-        <img onclick="myFunction(this);" id="myImg" src="images/athletes/Novak Djokovic.jpg" alt="Novak Djokovic">
-        <img onclick="myFunction(this);" id="myImg" src="images/athletes/Sadio Mane.jpg" alt="Sadio Mane">
-        <img onclick="myFunction(this);" id="myImg" src="images/athletes/Serena Williams.jpg" alt="Serena Williams">
-        <img onclick="myFunction(this);" id="myImg" src="images/athletes/Usain Bolt.jpg" alt="Usain Bolt">
-       
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/athletes/Alex Morgan.jpg" alt="Alex Morgan"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/athletes/Asisat Oshoala.jpeg" alt="Asisat Oshoala"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/athletes/Lebron James.jpg" alt="Lebron James"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/athletes/Lionel Messi.jpg" alt="Lionel Messi"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/athletes/Lisa Leslie.jpg" alt="Lisa Leslie"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/athletes/Maria Sharapova.jpg" alt="Maria Sharapova"></div>
+        <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/athletes/Novak Djokovic.jpg" alt="Novak Djokovic"></div>
+        <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/athletes/Sadio Mane.jpg" alt="Sadio Mane"></div>
+        <div class="thumbnail wide"><img onclick="myFunction(this);" id="myImg" src="images/athletes/Usain Bolt.jpg" alt="Usain Bolt"></div>
+        <div class="thumbnail narrow"><img onclick="myFunction(this);" id="myImg" src="images/athletes/Serena Williams.jpg" alt="Serena Williams"></div>
+        
         <!-- The Modal -->
         <div id="myModal" class="modal">
         
@@ -51,5 +51,9 @@
         <script src="javascript/script.js"></script>
        
         </div>
+        <div class="clear"></div>
+    <footer>
+        <p>All Images © Akanni Photo 2020</p>
+    </footer>
 </body>
 </html>
