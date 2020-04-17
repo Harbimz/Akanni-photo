@@ -426,8 +426,19 @@ footer p {
     display: none;
   }
 
-  .header h1 {
-    float: left;
+  .header {
+  height: 7vw;
+  width: 100vw;
+  position: relative;
+}
+
+.header h1 {
+  float: left;
+}
+
+.header h1 a {
+  text-decoration: none;
+  color: black;
 }
 
       .wide {
