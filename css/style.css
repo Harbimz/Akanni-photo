@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
 width: 90vw;
 height: auto;
@@ -28,17 +32,16 @@ padding-right: 4vw;
 .main-menu {
   width: 90vw;  
   height: 3vw;
-  position: absolute;
+  position: relative;  
   margin-top: -2vw;
 }
 
 .main-menu ul {
-    float: left;
     width: 90vw;    
     padding-left: 0vw;
     height: 1.6vw;
     margin-top: 1vw;
-    position: absolute;
+    position: relative;
 }
 
 .main-menu ul li {
@@ -70,7 +73,8 @@ nav.main-menu ul li.active a {
 .gallery {
     width: 90vw;
     height: fit-content;
-    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gallery h3 {
@@ -284,3 +288,154 @@ footer p {
 .icon img {
   width: 1.5vw;
 }
+
+.menubtn, .dropdown {
+  display: none;
+}
+
+
+
+@media only screen and (max-width:620px){
+  .dropdown {
+    display: block;
+  }
+
+  .menubtn {
+    border-radius: 1vw 1vw 1vw 1vw;
+    background-color: white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: auto;
+    cursor: pointer;
+    transition: 0.3s;
+    float: right;
+    position: relative;
+    top: 3vw;
+    display: block;
+  }
+
+  .menubtn:hover {opacity: 0.7;}
+
+.menubtn .menumob {
+    margin-left: 0vw;
+    float: left;
+    font-size: 2.3vw;
+    margin-right: 0.5vw;
+    color: black;
+}
+
+  .menubtn img {
+    width: 2.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    float: left;
+    top: 0.2vw;
+  }
+
+  .dropdown .menu .menu-content ul {
+    padding-left: 0vw;
+    padding-right: 0vw;
+    overflow: hidden;
+    width: 90vw;
+  }
+
+  .dropdown .menu .menu-content ul li {
+    list-style-type: none;
+    width: 90vw;
+    border-bottom: 0.1vw solid white; 
+    text-align: center;
+    overflow: hidden;
+    margin-right: 0vw;
+  }
+
+  .dropdown .menu .menu-content ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 5vw;
+    padding-left: 29vw;
+    padding-right: 29vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    color: rgb(139, 138, 138);
+  }
+
+  .dropdown .menu .menu-content ul li a:hover,
+  .dropdown .menu .menu-content ul li a:focus {
+    color: white
+  }
+
+  .active {
+    color: white
+  }
+
+  .menu {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 0vw;
+    overflow: hidden;
+    background-color: black;
+    background-color: rgba(0,0,0,0.9);
+    
+  }
+
+  .menu-content {
+    display: block;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    padding-right: 0vw;
+    width: 90vw;
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  .close-menu {
+    position: absolute;
+    top: 1.5vw;
+    right: 3.5vw;
+    color: #f1f1f1;
+    font-size: 4vw;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close-menu:hover,
+  .close-menu:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .show {display:block;}
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:620px) {
+  /*  For mobile phones:*/
+      .main-menu {
+    display: none;
+  }
+
+  .header h1 {
+    float: left;
+}
+
+      .wide {
+      width: 44.9vw;
+    }
+      .narrow {
+      width: 22.4vw;
+    }
+  }
+
+
