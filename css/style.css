@@ -337,12 +337,12 @@ footer p {
     padding-left: 0vw;
     padding-right: 0vw;
     overflow: hidden;
-    width: 90vw;
+    width: 100vw;
   }
 
   .dropdown .menu .menu-content ul li {
     list-style-type: none;
-    width: 90vw;
+    width: 100vw;
     border-bottom: 0.1vw solid white; 
     text-align: center;
     overflow: hidden;
@@ -385,7 +385,7 @@ footer p {
     animation-name: zoom;
     animation-duration: 0.6s;
     padding-right: 0vw;
-    width: 90vw;
+    width: 100vw;
   }
 
   @keyframes zoom {
@@ -393,25 +393,14 @@ footer p {
     to {transform:scale(1)}
   }
 
-  .close-menu {
-    position: absolute;
-    top: 1.5vw;
-    right: 3.5vw;
-    color: #f1f1f1;
-    font-size: 4vw;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-
-  .close-menu:hover,
-  .close-menu:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
   .show {display:block;}
 
+  body {
+    width: 100vw;
+    height: auto;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    }
 }
 
 
@@ -426,7 +415,8 @@ footer p {
     display: none;
   }
 
-  .header {
+
+.header {
   height: 7vw;
   width: 100vw;
   position: relative;
@@ -440,6 +430,7 @@ footer p {
   text-decoration: none;
   color: black;
 }
+
 
       .wide {
       width: 44.9vw;
