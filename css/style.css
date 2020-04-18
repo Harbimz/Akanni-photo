@@ -286,7 +286,7 @@ footer p {
 }
 
 .icon img {
-  width: 1.5vw;
+  width: 2.5vw;
 }
 
 .menubtn, .menu-content {
@@ -457,8 +457,7 @@ footer p {
     width: 100vw;
     height: fit-content;
     margin-left: auto;
-    margin-right: auto;
-    background-color: pink;
+    margin-right: auto;    
     position: relative;
     margin-top: 1vw;
 }
@@ -499,7 +498,73 @@ footer p {
   max-width: 80vw;
 }
 
+.events {
+  width: 100vw;
+ height: fit-content;
+  margin-top: 1vw;
+}
 
+.event {
+  height: 50vw;
+}
+
+.event-link img {
+  height: 30vw;
+}
+
+.gallery h3 {
+  margin-top: 5vw;
+  font-size: 2.4vw;
+}
+
+.profile-photo {
+  height: 60vw;
+  width: 100vw;
+  margin-top: 1.5vw;
+}
+
+.profile-photo img {
+width: 60vw;
+}
+
+.about {
+  margin-top: 5vw;
+  height: fit-content;
+  width: 100vw;
+}
+
+article {
+  width: 100vw;
+}
+
+article h2 {
+  text-align: center;
+  font-size: 2.5vw;
+}
+article p {
+  text-align: justify;
+  font-size: 2.1vw;
+}
+.contact {
+  margin-top: 5vw;
+}
+.contact h3 {
+  font-size: 2.5vw;
+}
+
+.contact p {
+  margin-left: 16vw;
+  font-size: 2.1vw;
+  padding: 0.1vw 0;
+}
+footer {
+  width: 100vw;
+  margin-top: 15vw;
+}
+
+footer p {
+  font-size: 2.1vw;
+}
 
 
   }
