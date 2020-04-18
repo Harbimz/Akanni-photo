@@ -289,7 +289,7 @@ footer p {
   width: 1.5vw;
 }
 
-.menubtn, .dropdown {
+.menubtn, .menu-content {
   display: none;
 }
 
@@ -308,10 +308,11 @@ footer p {
     width: auto;
     cursor: pointer;
     transition: 0.3s;
-    float: right;
-    position: relative;
-    top: 3vw;
+    top: 0vw;
+    right: 0vw;
+    position: absolute;
     display: block;
+    height: 6vw;
   }
 
   .menubtn:hover {opacity: 0.7;}
@@ -319,28 +320,29 @@ footer p {
 .menubtn .menumob {
     margin-left: 0vw;
     float: left;
-    font-size: 2.3vw;
+    font-size: 4vw;
     margin-right: 0.5vw;
     color: black;
-}
+    vertical-align: middle;
+  }
 
   .menubtn img {
-    width: 2.5vw;
+    width: 4vw;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     float: left;
-    top: 0.2vw;
+    top: 0.5vw;
   }
 
-  .dropdown .menu .menu-content ul {
+ .menu .menu-content ul {
     padding-left: 0vw;
     padding-right: 0vw;
     overflow: hidden;
     width: 100vw;
   }
 
-  .dropdown .menu .menu-content ul li {
+  .menu .menu-content ul li {
     list-style-type: none;
     width: 100vw;
     border-bottom: 0.1vw solid white; 
@@ -349,7 +351,7 @@ footer p {
     margin-right: 0vw;
   }
 
-  .dropdown .menu .menu-content ul li a {
+  .menu .menu-content ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 5vw;
@@ -360,8 +362,8 @@ footer p {
     color: rgb(139, 138, 138);
   }
 
-  .dropdown .menu .menu-content ul li a:hover,
-  .dropdown .menu .menu-content ul li a:focus {
+  .menu .menu-content ul li a:hover,
+  .menu .menu-content ul li a:focus {
     color: white
   }
 
@@ -393,14 +395,25 @@ footer p {
     to {transform:scale(1)}
   }
 
+  .close-menu {
+    position: absolute;
+    top: 1.5vw;
+    right: 3.5vw;
+    color: #f1f1f1;
+    font-size: 4vw;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close-menu:hover,
+  .close-menu:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   .show {display:block;}
 
-  body {
-    width: 100vw;
-    height: auto;
-    padding-left: 0vw;
-    padding-right: 0vw;
-    }
 }
 
 
@@ -415,29 +428,79 @@ footer p {
     display: none;
   }
 
-
-.header {
-  height: 7vw;
-  width: 100vw;
-  position: relative;
-}
-
-.header h1 {
-  float: left;
-}
-
-.header h1 a {
-  text-decoration: none;
-  color: black;
-}
-
-
       .wide {
-      width: 44.9vw;
+      width: 49.9vw;
     }
       .narrow {
-      width: 22.4vw;
+      width: 24.9vw;
     }
+    body {
+      width: 100vw;
+      padding-left: 0vw;
+      padding-right: 0vw;
+      }
+      .header {
+        height: 5vw;
+        width: 100vw;
+        background-color: aqua;
+        position: relative;
+        top: 0vw;
+      left: 0vw;
+      z-index: 1;
+      display: block;
+    }
+    .header h1 {
+      font-size: 5vw;
+  }
+  .gallery {
+    width: 100vw;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: pink;
+    position: relative;
+    margin-top: 1vw;
+}
+.thumbnail {
+  height: 30vw;
+  background-color: black;
+  border-radius: 1vw;
+  overflow: hidden;
+  float: left;
+  align-content: center;
+  margin-right: 0.1vw;
+  margin-bottom: 0.1vw;
+}
+
+#myImg {
+  cursor: pointer;
+  transition: 0.3s;
+  height: 30vw;
+  
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 5vw; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 80vw;
+}
+
+
+
+
   }
 
 
